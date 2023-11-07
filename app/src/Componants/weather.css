@@ -1,0 +1,339 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: antiquewhite;
+}
+
+.wrap
+{
+    background-color: aquamarine;
+    width: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+   border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}   
+.mainicon{
+    font-size:3.5rem;
+   
+}
+.weathericon
+{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    margin-top: 10px;
+
+}
+.searchTerm
+{
+    height: 6vh;
+    padding: 2px 0px 0px 10px;
+    font-size: 18px;
+}
+.searchButton
+{
+   cursor: pointer;
+   padding-left: 10px;
+}
+.maincontainer{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.search
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  
+    align-items: center;
+    
+}
+.weatherinfo
+{
+    display: flex;
+    margin-top: 25px;
+    color: rgb(16, 15, 15);
+    padding: 10px;
+   gap: 8px;
+   
+   
+}
+.temp
+{
+    color: rgb(28, 31, 229);
+}
+
+.place
+{
+    font-size: 14px;
+}
+.description
+{
+    margin-left: 10px;
+}
+.date
+{
+    margin-left: 60px;
+    
+    
+}
+.tempreture
+{
+    font-size: 22px;
+}
+.sicons
+{
+    font-size: 18px;
+}
+.two-sided-section
+{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.extra-info-leftside
+{
+    font-size: 11px;
+}
+.temp-info-minmax
+{
+    display: flex;
+    gap: 15px;
+
+}
+.weather-extra-info
+{
+    display: flex;
+}
+.extra-temp
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+.weather-extra-info
+{
+    margin-left: 25px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.appname
+{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-90 {
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 100px;
+  background-color: #4C43CD;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+.iconinfo  {
+   font-size: 22px;
+}
+/* Responsive styles using media queries */
+
+@media (max-width: 768px) {
+    .wrap {
+        width: 90%; /* Adjusted for smaller screens */
+    }
+
+    .mainicon {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+
+    .weathericon {
+        padding: 15px; /* Adjusted for smaller screens */
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .wrap {
+        padding: 10px; /* Further adjusted for smaller screens */
+    }
+
+    .mainicon {
+        font-size: 2rem; /* Further adjusted for smaller screens */
+    }
+
+    .weathericon {
+        padding: 10px; /* Further adjusted for smaller screens */
+    }
+}
+
+/* Add more media queries as needed for other screen sizes */
+
+/* The rest of your CSS code remains the same */
+
+  .wrapper h1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 888;
+    text-transform: uppercase;
+  }
+  .wrapper div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+  }
+  div .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+  }
+  .wrapper div:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    animation: animate 3s linear infinite;
+  }
+  .wrapper div:nth-child(4) {
+    top: 66%;
+    left: 30%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(6) {
+    top: 30%;
+    left: 60%;
+    animation: animate 5s linear infinite;
+  }
+  .wrapper div:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(8) {
+    top: 75%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(9) {
+    top: 50%;
+    left: 50%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(10) {
+    top: 45%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+  }
+  .wrapper div:nth-child(11) {
+    top: 10%;
+    left: 90%;
+    animation: animate 9s linear infinite;
+  }
+  .wrapper div:nth-child(12) {
+    top: 20%;
+    left: 70%;
+    animation: animate 7s linear infinite;
+  }
+  .wrapper div:nth-child(13) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+  }
+  .wrapper div:nth-child(14) {
+    top: 60%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+  }
+  .wrapper div:nth-child(15) {
+    top: 90%;
+    left: 80%;
+    animation: animate 9s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+      transform: scale(1.3) translateY(-100px) rotate(360deg);
+    }
+  }
+  
